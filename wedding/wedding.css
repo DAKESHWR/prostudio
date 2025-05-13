@@ -6,9 +6,7 @@
 
  body {
 
-     /* padding: 40px; */
-     font-family: sans-serif;
-     /* line-height: 1.5rem; */
+   font-family: 'Poppins', sans-serif;
  }
 
  #header {
@@ -141,7 +139,7 @@
      color: #ff0f3d;
      font-size: 60px;
 
-     font-family: 'Courier New', Courier, monospace;
+   
 
  }
 
