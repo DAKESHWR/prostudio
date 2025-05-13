@@ -1,14 +1,4 @@
 
-let text = " SEE OUR WORKS • SEE OUR WORKS • ";
-let textContainer = document.querySelector(".text-circle");
-
-for (let i = 0; i < text.length; i++) {
-    let span = document.createElement("span");
-    span.innerText = text[i];
-    span.style.transform = `rotate(${i * (360 / text.length)}deg)`;
-    textContainer.appendChild(span);
-}
-
 
 // counter effect 
 
