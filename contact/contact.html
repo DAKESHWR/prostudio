@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../wedding/wedding.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            /* margin: 0; */
+            /* padding: 20px; */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+            margin: 22px;
+        }
+
+        .box h3 {
+            margin-top: 0;
+            color: #111;
+        }
+
+        .box p {
+            margin: 8px 0;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .office-location {
+            margin-bottom: 20px;
+        }
+
+        .office-location strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #111;
+        }
+
+        /* Team Card Styles */
+        .team-section {
+            margin-top: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 37vh;
+        }
+
+        .team-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .team-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+
+        }
+
+        .team-card {
+            background: white;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+        }
+
+        .team-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-card h4 {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #111;
+        }
+
+        .team-card p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .team-section{
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="hero-section">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+                <li><a href="#team">About</a></li>
+                <li><a href="#container">Contact</a></li>
+                <li><a href="../index.html">Services</a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1><b><i>PRO STUDIO</i></b></h1>
+                <p><b>MOMENTS TO MASTERPIECE</b></p>
+            </div>
+            <ul class="nav-list ">
+               <li><a href="../index.html">Home</a></li>
+                <li><a href="#team">About</a></li>
+                <li><a href="#container">Contact</a></li>
+                <li><a href="../index.html">Services</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <!-- nav ends here -->
+    <!-- Left Side Containers -->
+    <div id="container" class="container">
+        <!-- Customer Care Box -->
+        <div class="box">
+            <h3>Customer Care:</h3>
+            <p><strong>Phone:</strong> 99999 99999</p>
+            <p><strong>Email:</strong> xyz@gmail.com</p>
+            <p><strong>WhatsApp:</strong></p>
+            <a href="" class="whatsapp-btn" target="_blank">📲 Send Message</a>
+        </div>
+
+        <!-- Our Offices Box -->
+        <div class="box">
+            <h3>Our Offices</h3>
+
+            <div class="office-location">
+                <strong>Mumbai (MH)</strong>
+                <p>Management Pvt Ltd, WE WORK SPECTRUM TOWER,<br>
+                    Chincholi Bunder Road, Malad West, Mumbai,<br>
+                    Mumbai Suburban, Maharashtra, 400064</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="team" class="team-section">
+        <h2 class="team-title">Meet Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="https://i.pravatar.cc/80?img=1" alt="Owner Avatar">
+                <h4>Ravi Sharma</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-card">
+                <img src="https://i.pravatar.cc/80?img=2" alt="Team Member Avatar">
+                <h4>Priya Mehta</h4>
+                <p>Marketing Head</p>
+            </div>
+            <div class="team-card">
+                <img src="https://i.pravatar.cc/80?img=3" alt="Team Member Avatar">
+                <h4>Akash Verma</h4>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>Follow Us On</div>
+        <div class="social-links">
+            <a href=""><img src="./../assets/ig.svg" alt="instagram"></a>
+            <a href=""><img src="./../assets/facebook.svg" alt="instagram"></a>
+            <a href=""><img src="./../assets/youtube.svg" alt="instagram"></a>
+        </div>
+
+        <p class="text-center" id="work">
+            <b>Copyright &copy; 2025 Pro-Studio
+                | All rights reserved.| </b>
+        </p>
+        <p>Made By Dakeshwar Sahu</p>
+    </footer>
+    <script src="../wedding/wedding.js"></script>
+</body>
+
+</html>
