@@ -151,15 +151,31 @@
  .offer-title {
      color: #ff0f3d;
  }
-
- .book-btn {
-     background-color: black;
-     color: white;
-     border-radius: 5px;
-     height: 35px;
-     width: 100px;
-     cursor: pointer;
+ .package a{
+    text-decoration: none;
  }
+.book-btn {
+    display: inline-block;        
+    background-color: black;
+    color: white;
+    text-decoration: none;     
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    line-height: 35px;             
+    text-align: center;          
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #333;        
+}
+
 
  /* gallery starts from here  */
 
