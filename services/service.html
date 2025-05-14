@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="../wedding/wedding.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        .sec__first {
+            height: 65vh;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            position: relative;
+            width: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .text-overlay h2 {
+            margin: 0 0 5px;
+        }
+
+        .text-overlay p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .view-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background: red; */
+            border: 2px solid black;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+
+        }
+
+        .hover-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(236, 224, 224, 0.452);
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .card:hover .hover-overlay {
+            opacity: 1;
+        }
+
+        .card:hover .view-btn {
+            opacity: 1;
+            z-index: 100;
+            background: rgba(245, 8, 8, 0.253);
+        }
+       @media screen and (max-width: 700px) {
+              .sec__first {
+                height: auto;
+                margin-bottom: 50px;
+              }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- naavbar starts from here -->
+    <header id="header" class="hero-section">
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../wedding/wedding.html">Wedding</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contact/contact.html">About</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h1><b><i>PRO STUDIO</i></b></h1>
+                <p><b>MOMENTS TO MASTERPIECE</b></p>
+            </div>
+            <ul class="nav-list ">
+                <li><a href="../index.html">Home</a></li>
+               <li><a href="../wedding/wedding.html">Wedding</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contact/contact.html">About</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+
+
+        </nav>
+    </header>
+    <!-- nav ends here -->
+    <div class="first o-h">
+
+        <h1>Our Services<span class="o-red">.</span>
+        </h1>
+
+        <div class="para">
+            <p>Make sure the moment of a lifetime is captured for eternity</p>
+        </div>
+    </div>
+    <section class="sec__first">
+        <div id="card-container" class="card-container">
+            <div class="card">
+                <img src="../assets/prewedding2.jpg" alt="Pre Wedding">
+                <div class="text-overlay">
+                    <h2>Pre Wedding</h2>
+                    <p>Pose in style, let the world know your love.</p>
+                </div>
+                <a href="#" class="view-btn">View Details</a>
+                <div class="hover-overlay"></div>
+
+            </div>
+            <div class="card">
+                <img src="../assets/wedding.jpg" alt="Wedding">
+                <div class="text-overlay">
+                    <h2>Wedding</h2>
+                    <p>Make sure the moment of a lifetime is captured for eternity.</p>
+                </div>
+                <a href="#" class="view-btn">View Details</a>
+                <div class="hover-overlay"></div>
+
+            </div>
+            <div class="card">
+                <img src="../assets/Baby.jpg" alt="Baby & Kids">
+                <div class="text-overlay">
+                    <h2>Baby & Kids</h2>
+                    <p>Kids grow up fast, make sure every month is captured for years.</p>
+                </div>
+                <a href="#" class="view-btn">View Details</a>
+                <div class="hover-overlay"></div>
+
+            </div>
+            <div class="card">
+                <img src="../assets/Baby-shower.jpg" alt="Maternity">
+                <div class="text-overlay">
+                    <h2>Maternity</h2>
+                    <p>Preserve the happiness of motherhood with some lovely pics.</p>
+                </div>
+                <a href="#" class="view-btn">View Details</a>
+                <div class="hover-overlay"></div>
+
+            </div>
+            <div class="card">
+                <img src="../assets/party.jpg" alt="Parties">
+                <div class="text-overlay">
+                    <h2>Parties</h2>
+                    <p>Special occasions demand special attention! Let's click!</p>
+                </div>
+                <a href="#" class="view-btn">View Details</a>
+                <div class="hover-overlay"></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div>Follow Us On</div>
+        <div class="social-links">
+            <a href=""><img src="./../assets/ig.svg" alt="instagram"></a>
+            <a href=""><img src="./../assets/facebook.svg" alt="instagram"></a>
+            <a href=""><img src="./../assets/youtube.svg" alt="instagram"></a>
+        </div>
+
+        <p class="text-center" id="work">
+            <b>Copyright &copy; 2025 Pro-Studio
+                | All rights reserved.| </b>
+        </p>
+        <p>Made By Dakeshwar Sahu</p>
+    </footer>
+    <script src="../wedding/wedding.js"></script>
+</body>
+
+</html>
