@@ -8,66 +8,66 @@
     <link rel="stylesheet" href="../wedding/wedding.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <style>
-.gallery {
-  column-count: 3;
-  column-gap: 10px;
-  padding: 10px;
-}
+        .gallery {
+            column-count: 3;
+            column-gap: 10px;
+            padding: 10px;
+        }
 
-.gallery img {
-  width: 100%;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
+        .gallery img {
+            width: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 5px;
+        }
 
-.gallery img:hover {
-  transform: scale(1.03);
-}
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
 
-/* Lightbox */
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.9);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-.lightbox-img {
-  max-width: 90%;
-  max-height: 80%;
-  margin: auto;
-}
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 80%;
+            margin: auto;
+        }
 
-.close {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  cursor: pointer;
-}
+        .close {
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            cursor: pointer;
+        }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .gallery {
-    column-count: 2;
-  }
-}
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
 
-@media (max-width: 480px) {
-  .gallery {
-    column-count: 1;
-  }
-}
-
+        @media (max-width: 480px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
     </style>
 </head>
 
@@ -82,10 +82,11 @@
         <div class="menu" id="menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="">Wedding</a></li>
+                <li><a href="../wedding/wedding.html">Wedding</a></li>
+                <li><a href="../services/service.html">Services</a></li>
+                <li><a href="#">Gallery</a></li>
                 <li><a href="../contact/contact.html">About</a></li>
                 <li><a href="../contact/contact.html">Contact</a></li>
-                <li><a href="../index.html">Services</a></li>
             </ul>
         </div>
         <nav class="navbar">
@@ -96,10 +97,11 @@
             </div>
             <ul class="nav-list ">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="">Wedding</a></li>
+                <li><a href="../wedding/wedding.html">Wedding</a></li>
+                <li><a href="../services/service.html">Services</a></li>
+                <li><a href="#">Gallery</a></li>
                 <li><a href="../contact/contact.html">About</a></li>
                 <li><a href="../contact/contact.html">Contact</a></li>
-                <li><a href="../index.html">Services</a></li>
             </ul>
 
 
@@ -115,21 +117,102 @@
             <p>Make sure the moment of a lifetime is captured for eternity</p>
         </div>
     </div>
-<!-- Gallery starts from here  -->
- <div class="gallery">
-  <img src="your-image1.jpg" alt="Image 1">
-  <img src="your-image2.jpg" alt="Image 2">
-  <img src="your-image3.jpg" alt="Image 3">
-  <img src="your-image4.jpg" alt="Image 4">
-  <img src="your-image5.jpg" alt="Image 5">
-  <!-- Add more images as needed -->
-</div>
+      <hr>
+    <!-- Gallery starts from here  -->
+    <div class="first o-h">
 
-<!-- Fullscreen Lightbox -->
-<div class="lightbox" id="lightbox">
-  <span class="close" onclick="closeLightbox()">×</span>
-  <img class="lightbox-img" id="lightbox-img">
-</div>
+        <h1>Wedding<span class="o-red">.</span>
+        </h1>
+
+       
+    </div>
+
+    <div class="gallery">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <img src="../assets/couple.jpg" alt="Image 5">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <!-- Add more images as needed -->
+    </div>
+    <hr>
+    <!-- Gallery ends from here  -->
+    <div class="first o-h">
+
+        <h1>Pre Wedding<span class="o-red">.</span>
+        </h1>
+
+       
+    </div>
+
+    <div class="gallery">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <img src="../assets/couple.jpg" alt="Image 5">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <!-- Add more images as needed -->
+    </div>
+    <hr>
+    <!-- Gallery ends from here  -->
+    <div class="first o-h">
+
+        <h1>Parties<span class="o-red">.</span>
+        </h1>
+
+       
+    </div>
+
+    <div class="gallery">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <img src="../assets/couple.jpg" alt="Image 5">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <!-- Add more images as needed -->
+    </div>
+    <hr>
+    <!-- Gallery ends from here  -->
+    <div class="first o-h">
+
+        <h1>Baby & Kids<span class="o-red">.</span>
+        </h1>
+
+        
+    </div>
+
+    <div class="gallery">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <img src="../assets/couple.jpg" alt="Image 5">
+        <img src="../assets/cople2.jpg" alt="Image 1">
+        <img src="../assets/prewedding.jpg" alt="Image 2">
+        <img src="../assets/prewedding2.jpg" alt="Image 3">
+        <img src="../assets/wedding.jpg" alt="Image 4">
+        <!-- Add more images as needed -->
+    </div>
+    <hr>
+    
+    <!-- Gallery ends from here  -->
+    <!-- Fullscreen Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img class="lightbox-img" id="lightbox-img">
+    </div>
 
 
 
@@ -150,19 +233,19 @@
     </footer>
     <script>
         const images = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
 
-images.forEach(img => {
-  img.addEventListener('click', () => {
-    lightbox.style.display = 'flex';
-    lightboxImg.src = img.src;
-  });
-});
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
 
-function closeLightbox() {
-  lightbox.style.display = 'none';
-}
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+        }
 
     </script>
     <script src="../wedding/wedding.js"></script>
