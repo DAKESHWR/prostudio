@@ -208,11 +208,14 @@ body {
     height: 100%;
     background: rgba(236, 224, 224, 0.452);
     opacity: 0;
-    transition: 0.3s ease;
+    transform: rotateZ(90deg);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    backface-visibility: hidden;
 }
 
 .card:hover .hover-overlay {
     opacity: 1;
+     transform: rotateY(0deg);
 }
 
 .card:hover .view-btn {
